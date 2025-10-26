@@ -7,7 +7,7 @@ def generator_numbers(text: str) -> Generator[float, None, None]:
     for num in re.findall(pattern, text):
         yield float(num)
 
-def sum_profit(text: str, func: Callable[[str], Generator[float, None, None]]) -> float:
+def sum_profit(text: str, func: Callable) -> float:
     # Sum all generated numbers
     return sum(func(text))
 
