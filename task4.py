@@ -52,8 +52,8 @@ def main():
     while True:
         command, args = parse_input(input("Enter a command: "))
 
-        if command in ("close", "exit"):
-            print("Good bye!")
+        if command in ("close", "exit", "bye", "goodbye"):
+            print("Goodbye!")
             break
         elif command == "hello":
             print("How can I help you?")
