@@ -40,7 +40,7 @@ def main():
 
     # If user requested a specific log level
     if len(sys.argv) == 3:
-        lvl = sys.argv[2]                               # Read desired level
+        lvl = sys.argv[2]                               # Read requested level
         picked = filter_by_level(logs, lvl)              # Get only logs of that level
         print(f"\nLog details for level '{lvl.upper()}':")
         # Print all matching log lines, or show "not found" message
